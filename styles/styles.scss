@@ -1,0 +1,108 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+
+.panchanga_main{
+    overflow-x: hidden;
+    width:100%;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.66666667;
+}
+.container {
+        background: #fff8e1;
+        text-align: center;  
+    }
+.header {
+    padding: 30px;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+   
+.row-wrapper {
+    background: white;
+    // border: 1px solid #dcdcdc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.datecall
+{
+    text-align: right;
+    font-size:16px;
+}
+.name {
+    background: white;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.whiteDiv {
+    // padding-top:20px; 
+    background: white; 
+    // padding-bottom: 20px;   
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+.rowTitle {
+    font-weight: 700;
+    text-align: right;
+    padding-right: 4px;
+}
+.sub-row {
+    padding-top: 10px;
+}
+// /form css////////////////
+
+.panchanga {
+   background: #e5e5e5
+}
+.container {
+    // border: solid red;
+    max-width: 1400px;
+}
+.dateWrapper {
+    // border: solid black 1px;
+    
+
+}
+.date-span-item {
+    text-align: right;
+    padding-top:10px; 
+}
+
+.date-select-items {
+    padding: 5px 20px;
+    font-size: 15px;
+    margin: 8px;
+    // width: 100%;
+    border-radius: 5px;
+    background: white;
+     border:solid 1px black;
+}
+.location-span-item {
+    text-align: right;
+    padding-top:10px; 
+}
+.location-select-items {
+    padding: 5px 50px;
+    font-size: 15px;
+    margin-top: 10px; 
+    border-radius: 5px;
+    background: white;
+    border:solid 1px black;
+    margin-top: 10px
+}
+.get_punchanga {
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.get_punchanga {
+    text-align: center;
+    // padding: 0px;
+}
+
+
