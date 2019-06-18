@@ -1,7 +1,6 @@
 <html>
-
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="calendar_header">
             <i class="prev-month fa fa-chevron-left fa-3x">left</i>
             <i class="next-month fa fa-chevron-right fa-3x">right</i>
@@ -10,13 +9,13 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>S</th>
-                    <th>M</th>
-                    <th>T</th>
-                    <th>W</th>
-                    <th>T</th>
-                    <th>F</th>
-                    <th>S</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wedsday</th>
+                    <th>Thusday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
                 </tr>
             </thead>
             <tbody id="calendar_tbody"></tbody>
@@ -108,8 +107,8 @@
 
     <script>
 
-
         function myCalendar(curr_month = "curr") {
+            console.log('1')
             var tbody_html = "";
             var td_class = "";
             var weekday_count = 1;
@@ -212,7 +211,7 @@
                 curr: month, 
                 next: month + 1
             }
-        };
+        }
         console.log(master_data.months,'months')
         
         //Getting February Days Including The Leap Year

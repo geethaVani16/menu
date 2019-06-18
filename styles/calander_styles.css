@@ -1,60 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.calander-main {
+    overflow-x: hidden;
+    
 }
-.calendar_header{
-    position: relative;
+/* .container {
+    background: #26c6da
+} */
+.body {
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 1.66666667;
+    color: #000;
 }
-.prev-month, .next-month{
-    cursor: pointer;
-    position: absolute;
-    top: 1px;
-    background: #fff;
-    /* width: 50px; */
-    /* height: 54px; */
-    /* padding: 8px 0 8px 10px; */
+.calander-wrapper {
+    width: 100%;
+    border: solid blue 3px;
 }
-.prev-month{ left: 1px; }
-.next-month{ right: 1px; }
-.month-year h3{
-    font-size: 40px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 0;
-    padding: 5px 0;
-    background: #eee;
-}
-.currentMonth{background: rgba(0,0,0,0.04);}
-.container {
-    margin-top: 10px;
-}
-
-th {
-    background: #faffe0;
-    border-bottom: 4px double #ddd !important;
-    font-size: 20px;
-    height: 30px;
-    text-align: center;
-    font-weight: 700;
-}
-
-td {
-    font-size: 20px;
-    background: rgba(0,0,0,0.02);
-    height: 100px;
-}
-td.empty{background: #fff;}
-
-.today {
-    font-weight: bold;
+.calander-header {
+    background: #26c6da;
     color: #fff;
-    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    width:100%;
+    margin: 0
+    
 }
-
-th:nth-of-type(7), td:nth-of-type(7) {
-    font-weight: bold;
+.main-table-wrapper {
+     width: 100%;
+    border: 7px solid #d60f0f;
 }
+.day-item {
+    background-color: #f8f3b4;
+    display: block;
+    padding: 2px;
+    
+    width: 100%;
 
-th:nth-of-type(1), td:nth-of-type(1) {
-    font-weight: bold;
 }

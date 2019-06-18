@@ -19,6 +19,9 @@ export default class index extends Component {
             <Link href='/calanderTable'> 
                  <a > calander ||</a>
             </Link>
+            <Link href='/home'> 
+                 <a > calander in home ||</a>
+            </Link>
 
             
         </div>
