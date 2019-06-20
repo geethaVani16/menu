@@ -1,5 +1,6 @@
 import '../styles/styles.scss'
 import Head from 'next/head';
+import Form from '../pages/form'
 import Moment from 'react-moment';
 import "moment-timezone";
 
@@ -93,6 +94,7 @@ export default class  Panchanga extends React.Component  {
         console.log(this.state.object)
         return (
                 <div>
+                    <Form/>
                     {this.state.object.map(obj => {
                         return(
                             

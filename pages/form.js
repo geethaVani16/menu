@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/styles.scss'
 
-export default class form extends Component {
+export default class Form extends Component {
     state = {
         years: [],
         currentYear: new Date().getUTCFullYear(),

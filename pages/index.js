@@ -16,12 +16,11 @@ export default class index extends Component {
             <Link href='/form'> 
                  <a > form ||</a>
             </Link>
-            <Link href='/calanderTable'> 
-                 <a > calander ||</a>
+
+            <Link href='/calander-modal'> 
+                 <a > calander with modal</a>
             </Link>
-            <Link href='/home'> 
-                 <a > calander in home ||</a>
-            </Link>
+            
 
             
         </div>
