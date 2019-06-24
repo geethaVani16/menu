@@ -1,10 +1,10 @@
 import React from 'react'
 import moment from 'moment'
+import axios from 'axios'
 import '../styles/calander_styles.css'
 import imageNext from '../images/next.svg'
 import imagePrev from '../images/prev.svg'
 import { ButtonToolbar, Button, Modal } from 'react-bootstrap'
-
 
 
 class DayCalander extends React.Component {
@@ -20,7 +20,7 @@ class DayCalander extends React.Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Day Details - {this.props.day}
+            {/* Day Details - {this.props.} */}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -44,8 +44,10 @@ export default class MyCalander extends React.Component {
     modalShow: false,
     dateContext: moment(),
     today: moment(),
+    headerMonth:{},
+    panchagam:[],
     days: [],
-    day:''
+    dayDetails:''
   }
 
   weekdaysShort = moment.weekdaysShort(); // ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -72,22 +74,47 @@ export default class MyCalander extends React.Component {
     let firstDay = moment(dateContext).startOf('month').format('d') // Day of week 0...1..5...6 //0--sun 1--mon
     return firstDay; //output:6 // month is starting with saturday
   }
+  
+ 
 
   componentDidMount = () => {
+    axios.get('https://harivara.staging.wpengine.com/asto_data.php')
+        .then(response => {
+            // console.log(response.data)
+            this.setState(() =>({
+                headerMonth:response.data.header_data,
+                panchagam:response.data.panchagam
+            }), () =>this.GenCal() )
+            
+        })
+        .catch(err => console.log(err))
+
+        
+  }
+
+  GenCal = () => {
     let blanks = [];
     for (let i = 0; i < this.firstDayofMonth(); i++) {
       blanks.push(<td key={i * 100}>{''}</td>)
     }
-    let daysInMonth = [];
-    for (let d = 1; d <= this.daysInMonth(); d++) {
+
+    var daysInMonth = [];
+    
+    for (let d = 0; d <= this.daysInMonth()-1; d++) {
+     
       daysInMonth.push(
         <td key={d}>
 
           <div className='table-td-item'>
 
-
-            <span className='table-day' 
-              onClick={ () => this.setState({ modalShow:true,day:d })}>{d}</span>
+            <span 
+            className='table-day'
+            onClick={ () => this.setState({ modalShow:true, dayDetails: d })}
+            >
+              
+          {/* {console.log(this.state.panchagam[d],'v')} */}
+              {this.state.panchagam[d].day}
+            </span>
           </div>
 
         </td>
@@ -95,11 +122,14 @@ export default class MyCalander extends React.Component {
       )
     }
     var totalSlots = [...blanks, ...daysInMonth] //combinning blanks and daysInMonth
+    // console.log(totalSlots,'totalslots')
     let rows = [];
     let cells = [];
     totalSlots.forEach((row, i) => {
+      console.log(row,'row')
+      console.log(i,'i')
       if ((i % 7) !== 0) {
-        cells.push(row)
+        cells.push(row) //row is one td item
       }
       else {
         let insertRow = cells.slice();
@@ -111,31 +141,16 @@ export default class MyCalander extends React.Component {
         let insertRow = cells.slice();
         rows.push(insertRow)
       }
+      
     })
     this.setState(() => ({ days: rows }))
   }
-
-  prevMonth = () => {
-    let dateContext = Object.assign({}, this.state.dateContext);
-    dateContext = moment(dateContext).subtract(1, "month");
-    this.setState({
-      dateContext
-    })
-    this.props.onPrevMonth && this.props.onPrevMonth();
-
-  }
-  nextMonth = () => {
-    let dateContext = Object.assign({}, this.state.dateContext);
-    dateContext = moment(dateContext).add(1, "month");
-    this.setState({
-      dateContext
-    })
-    this.props.onNextMonth && this.props.onNextMonth();
-  }
-
+  
 
   render() {
     let modalClose = () => this.setState({ modalShow: false });
+    console.log(this.state.panchagam ,'state')
+    
 
     return (
       <div>
@@ -146,7 +161,7 @@ export default class MyCalander extends React.Component {
           <div className="calander-main">
             <div className="row">
 
-              <div className='col-sm-8 col-lg-8 col-md-8 '>
+              <div className='col-sm-9 col-lg-9 col-md-9 '>
 
                 <div className='calander-wrapper'>
                   <div className='calander-header'>
@@ -164,9 +179,10 @@ export default class MyCalander extends React.Component {
                   </div>
 
                   <span>
+
                     {/* <span> 
                           <this.MonthNav/>
-                        </span> */}
+                    </span> */}
 
                     <table className='main-table-wrapper' >
 
@@ -180,7 +196,7 @@ export default class MyCalander extends React.Component {
                         </tr>
                       </thead>
 
-                      <tbody className='calander-body'>
+                      <tbody className='calander-body '>
                         {this.state.days.map((day, i) => {
                           return <tr key={i} className='calander-tr'> {day} </tr>
                         })}
@@ -194,7 +210,7 @@ export default class MyCalander extends React.Component {
 
 
               </div>
-              <div className='col-lg-4 col-md-4 col-sm-4'>
+              <div className='col-lg-3 col-md-3 col-sm-3'>
                 <p>
                   Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
@@ -226,8 +242,7 @@ export default class MyCalander extends React.Component {
             < DayCalander
               show={this.state.modalShow}
               onHide={modalClose}
-              
-              day={this.state.day}
+              dayDetails={this.state.dayDetails}
             />
           </ButtonToolbar>
 

@@ -26,6 +26,15 @@ export default class Header extends Component {
                         <li className="nav-item active">
                             <a className="nav-link" href="/aprilMonth">calander</a>
                         </li>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="calander-modal">calander with modal</a>
+                        </li>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="test">test</a>
+                        </li>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="code">calander with moment</a>
+                        </li>
                         </ul>
                     </div>
                 </nav>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/styles.scss'
+import axios from 'axios'
 
 export default class Form extends Component {
     state = {
@@ -7,6 +8,7 @@ export default class Form extends Component {
         currentYear: new Date().getUTCFullYear(),
         currentMonth: new Date().toDateString().split(' ')[1],
         currentDay: new Date().getDate(),
+        currentLocation: {},
         months: [
             { id: 1, month: 'Jan' },
             { id: 2, month: 'feb' },
@@ -45,6 +47,12 @@ export default class Form extends Component {
         this.setState(() => ({ days: monthDates }))
 
     }
+
+    handleLocationChange = (e) => {
+        const enteredCurrentLocation = e.target.value
+        // console.log(enteredCurrentLocation,'enteredlocation')
+        this.setState(() => ({ currentLocation: enteredCurrentLocation }))
+    }
     componentWillMount() {
         let years = []
         let output = 0
@@ -53,145 +61,220 @@ export default class Form extends Component {
             years.push(output)
         }
         this.setState(() => ({ years: years }))
+
+        axios.get('https://mytempletour.com/api/ipdata')
+            .then(response => axios.get(`https://api.ipdata.co/${response.data}?api-key=d489ad57d4edb57b484e01061037935c40a49bedfbcbf01f5aa85271`))
+            .then(response => {
+                console.log(response.data, 'res.data')
+                this.setState(() => ({ currentLocation: response.data }))
+            })
+            .catch(err => console.log(err))
     }
 
     render() {
         //    console.log( this.state)
         return (
-            <div className='container'>
-                <div className='row'>
-                    <div className="col-sm-2">hello 2</div>
-                    <div className="col-sm-6 panchanga">
-                        <form>
-                           <div className='row dateWrapper ' >
-                               <span className="col-sm-3 date-span-item"> Date </span>
-                               <span className="col-sm-9">
-                               
-                                    <span className='select-items-wrapper'>
-                                        <select className='date-select-items'>
-                                            <option value=''>{this.state.currentYear}</option>
-                                            {this.state.years.map(year => {
-                                                return <option key={year}>{year}</option>
-                                            })}
-                                        </select>
 
-                                        <select onChange={this.handleMonthChange} className='date-select-items'>
-                                            <option value=''>{this.state.currentMonth}</option>
-                                            {this.state.months.map(month => {
-                                                return <option key={month.id} value={month.id}>{month.month}</option>
-                                            })}
-                                        </select>
-                                        <select className='date-select-items' >
-                                            <option value='' >{this.state.currentDay}</option>
-                                            {this.state.days.map(day => {
-                                                return <option key={day}>{day}</option>
-                                            })}
-                                        </select>
-                                    </span>
-                            
-                               </span>
-                           </div>
-                           <div className='row'>
-                               <div className="col-sm-3 location-span-item" >
-                                   <span >Location</span>
-                               </div>
-                               <div className="col-sm-9" >
-                                   <span >
-                                        <label >
-                                            <input type='text' value='' className='location-select-items'/>
-                                        </label>
-                                   </span>
-                               </div>
 
-                           </div>
-                          <div className='row'>
-                              <div className='col-sm-3'></div>
-                                <div className='col-sm-9 get_punchanga'>
-                                 <button type="button" className="btn btn-danger ">GET PANCHANG</button>
-                                </div>
 
-                          </div>
+            <form className='panchanga-form'>
 
-                        </form>
+                <div className='date-wrapper'>
+
+                    <div className='row each-item'>
+                        <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+                            <span >Date</span>
+                        </div>
+                        <div className='col-md-9 col-sm-9 col-lg-9 '>
+
+                            <div className='query-item'>
+
+                                <span >
+
+                                    <select className='select-items form-control'>
+                                        <option value=''>{this.state.currentYear}</option>
+                                        {this.state.years.map(year => {
+                                            return <option key={year}>{year}</option>
+                                        })}
+                                    </select>
+
+                                </span>
+
+                                <span >
+                                    <select onChange={this.handleMonthChange} className='form-control select-items'>
+                                        <option value=''>{this.state.currentMonth}</option>
+                                        {this.state.months.map(month => {
+                                            return <option key={month.id} value={month.id}>{month.month}</option>
+                                        })}
+                                    </select>
+
+                                </span>
+                                <span>
+
+                                    <select className='select-items form-control' >
+                                        <option value=''>{this.state.currentDay}</option>
+                                        {this.state.days.map(day => {
+                                            return <option key={day}>{day}</option>
+                                        })}
+                                    </select>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
                     </div>
-                    <div className="col-sm-4"> hello 4</div>
 
                 </div>
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
 
+                        <span>Location</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+
+                        <div className='query-item'>
+                            
+                                <label>
+
+                                    <input type='text'
+                                        value={this.state.currentLocation.city}
+                                        onChange={this.handleLocationChange}
+                                        className='form-control text-long-pad'
+                                    />
+
+                                </label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>Curr Location</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9 location-items-wrapper'>
+
+                        <div className='query-item'>
+                            <div className='location-details'>
+                                <span >{this.state.currentLocation.emoji_flag}</span>
+                                <span >{this.state.currentLocation.city}</span>
+                                <span >{this.state.currentLocation.region}</span>
+                                <span >{this.state.currentLocation.country_name}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>Latitude</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+                        <div className='row geo-items'>
+                            <div className='col-md-6 col-sm-6 col-lg-6 '>
+                                <span className='geo-each-item form-control'>{this.state.currentLocation.latitude}</span>
+                            </div>
+                            <div className='col-md-6 col-sm-6 col-lg-6 '>
+                                <span className='geo-each-item form-control'>North</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>Longitude</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+                        <div className='row geo-items'>
+                            <div className='col-md-6 col-sm-6 col-lg-6 '>
+                                <span className='geo-each-item form-control'>{this.state.currentLocation.longitude}</span>
+                            </div>
+                            <div className='col-md-6 col-sm-6 col-lg-6 '>
+                                <span className='geo-each-item form-control'>North</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>Timezone</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+                        <div className='form-control text-long-pad'>
+                            {this.state.currentLocation.time_zone && this.state.currentLocation.time_zone.name }
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>offset</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+                        <div className='form-control text-long-pad'>
+                            {this.state.currentLocation.time_zone && this.state.currentLocation.time_zone.offset }
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div className='row each-item'>
+                    <div className='col-md-3 col-sm-3 col-lg-3 form-heading'>
+
+                        <span>Ayanamsa</span>
+
+                    </div>
+
+                    <div className='col-md-9 col-sm-9 col-lg-9'>
+                        <div className='form-control text-long-pad'>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            <div  className='get-panchang'>
+                <input type="submit" value='get panchang' className='btn btn-danger'/>
             </div>
+            </form>
+
+
+
+
+
         )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        // return (
-        //     <div className="row">
-        //         <div className='col-md-2'></div>
-        //         <div className='col-md-6 wrapper'>
-        //             <form>
-        //                 <div className='dateFormMain'>
-        //                     <div className='row'>
-        //                         <div className='col-md-4'>
-        //                             {/* <div> */}
-        //                             Date :
-        //                        {/* </div> */}
-        //                         </div>
-        //                         <div className='col-md-8 dateForm'>
-        //                             <div className='dateFormColum'>
-        //                                 <select className="select-row-wrapper" >
-        //                                     <option value=''>{this.state.currentYear}</option>
-        //                                     {this.state.years.map(year => {
-        //                                         return <option key={year}>{year}</option>
-        //                                     })}
-        //                                 </select>
-        //                             </div>
-        //                             <div className='dateFormColum'>
-        //                                 <select className="select-row-wrapper" onChange={this.handleMonthChange}>
-        //                                     <option value=''>{this.state.currentMonth}</option>
-        //                                     {this.state.months.map(month => {
-        //                                         return <option key={month.id} value={month.id}>{month.month}</option>
-        //                                     })}
-        //                                 </select>
-        //                             </div>
-        //                             <div className='dateFormColum'>
-        //                                 <select className="select-row-wrapper" >
-        //                                     <option value='' >{this.state.currentDay}</option>
-        //                                     {this.state.days.map(day => {
-        //                                         return <option key={day}>{day}</option>
-        //                                     })}
-        //                                 </select>
-        //                             </div>
-        //                         </div>
-        //                     </div>
-
-        //                 </div>
-        //                 <div className='locationMainForm'>
-        //                     <div className='row'>
-        //                         <div className='col-md-4'>
-        //                            <div className='locationWrapper' > Location </div>
-        //                         </div>
-        //                         <div className='col-md-8 dateFormColum'>
-        //                             <input type='text' className='inputLocationWrapper'/>
-
-        //                         </div>
-
-        //                     </div>
-        //                 </div>
-        //             </form>
-        //         </div>
-        //         <div className='col-md-4'></div>
-
-        //     </div>
-        // )
     }
 }
