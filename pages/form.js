@@ -89,7 +89,7 @@ export default class Form extends Component {
 
                             <div className='query-item'>
 
-                                <span >
+                                <span className='select-item'>
 
                                     <select className='select-items form-control'>
                                         <option value=''>{this.state.currentYear}</option>
@@ -100,7 +100,7 @@ export default class Form extends Component {
 
                                 </span>
 
-                                <span >
+                                <span className='select-item'>
                                     <select onChange={this.handleMonthChange} className='form-control select-items'>
                                         <option value=''>{this.state.currentMonth}</option>
                                         {this.state.months.map(month => {
@@ -109,7 +109,7 @@ export default class Form extends Component {
                                     </select>
 
                                 </span>
-                                <span>
+                                <span className='select-item'>
 
                                     <select className='select-items form-control' >
                                         <option value=''>{this.state.currentDay}</option>

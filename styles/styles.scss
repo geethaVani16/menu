@@ -97,11 +97,14 @@ body {
     width:100px;
     padding-right: 20px;
     padding-left: 5px;
-    margin: 5px !important;
+   
     height: 35px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+.select-item {
+    margin: 5px;
 }
 
 .panchanga {
@@ -133,12 +136,14 @@ body {
 
 .get-panchang {
     text-align: center;
-    margin-top: 10px;   
+    margin: 10px;   
     cursor: pointer;
     text-transform: uppercase;
+   
 }
 .get-panchang input {
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 
@@ -147,9 +152,6 @@ body {
 .calander-main {
     overflow-x: hidden;
 }
-
-
-
 
 
 body #__next {
@@ -194,7 +196,7 @@ body #__next {
     text-align: center;
     cursor: pointer;
     margin: -1px;
-    height:100px;
+    // height:120px;
 }
 .table-thead-item {
     background-color:white;
@@ -208,9 +210,15 @@ body #__next {
 .main-table-wrapper {
     width: 100%
 }
-/* .calander-body td:nth-child(odd) {
-    background-color: #777
-} */
+.calander-body td:last-child {
+    // background-color: #777;
+    border-right: #ddd solid 2px;
+    
+} 
+// .calander-body td:first-child {
+//     background-color: #f8f3b4;
+      
+// }
 .main-table-wrapper, .calander-body, .calander-tr , .th-item {
      border:  #ddd solid 2px;
      /* font-weight: 700; */
@@ -221,6 +229,7 @@ body #__next {
 }
 .day-tithi {
     height: 35%;
+    padding-top:6px; 
     /* top: 7px; */
     line-height: 13px;
     text-align: left;
@@ -247,6 +256,34 @@ body #__next {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+.font-awasome-sun {
+    display: flex;
+    font-size: 12px;
+    padding: 5px
+    
+  
+    // text-align: center;
+    // padding-left: 20px;
+}
+.Sunset {
+    color: #8c2502;
+    width: 100%;
+    text-align: right;
+
+}
+.SunRise{
+    color: #ff9629; 
+} 
+
+
+/**************************media qurery for calander ************************************/
+@media only screen and (max-width:500px) {
+    .weekday {
+   font-size: 18px;
+//    background: #26c6da;
+    }
 }
 /********************************  day info css **************************************/
 .current-date-wrapper {
@@ -344,5 +381,7 @@ body #__next {
     padding: 10px;
     border:2px solid #f5f5f5;
 }
-
+.font-awasome {
+    // background-color: #f50057
+}
 

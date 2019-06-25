@@ -39889,7 +39889,7 @@ function (_Component) {
             lineNumber: 65
           },
           __self: this
-        }, _this.state.panchagam[d].tithi_name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }, _this.state.panchagam[d].tithi_name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
           className: "table-day",
           onClick: function onClick() {
             return _this.setState({
@@ -39903,12 +39903,41 @@ function (_Component) {
           },
           __self: this
         }, _this.state.panchagam[d].day), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: "font-awasome-sun",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 73
           },
           __self: this
-        }))));
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: "SunRise",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
+          class: "fas fa-sun ",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 75
+          },
+          __self: this
+        }, moment__WEBPACK_IMPORTED_MODULE_8___default()(_this.state.panchagam[d].sun_Rise).format("HH:mm"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: "Sunset",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
+          class: "fas fa-sun ",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 82
+          },
+          __self: this
+        }, moment__WEBPACK_IMPORTED_MODULE_8___default()(_this.state.panchagam[d].sun_Set).format("HH:mm")))))));
       };
 
       for (var d = 0; d <= _this.daysInMonth() - 1; d++) {
@@ -39979,42 +40008,42 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 125
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "container-fluid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 126
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 127
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "col-sm-12 col-lg-9 col-md-9 ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 128
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "  calander-wrapper",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 129
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "calander-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 131
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
@@ -40024,7 +40053,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 132
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -40032,13 +40061,13 @@ function (_Component) {
         className: "image-prev-month",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 135
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 137
         },
         __self: this
       }, " ", this.month(), "-", this.year(), " "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
@@ -40048,7 +40077,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 138
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -40056,34 +40085,34 @@ function (_Component) {
         className: "image-next-month",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 141
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "main-calander",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 145
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("table", {
         className: "main-table-wrapper",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 146
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("thead", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 147
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
         className: "table-thead-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 148
         },
         __self: this
       }, this.weekdaysShort.map(function (weekday) {
@@ -40092,14 +40121,14 @@ function (_Component) {
           className: "th-item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 150
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
           className: "weekday",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 135
+            lineNumber: 151
           },
           __self: this
         }, weekday));
@@ -40107,7 +40136,7 @@ function (_Component) {
         className: "calander-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 156
         },
         __self: this
       }, this.state.monthDays.map(function (day, i) {
@@ -40116,7 +40145,7 @@ function (_Component) {
           className: "calander-tr",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 143
+            lineNumber: 159
           },
           __self: this
         }, day);
@@ -40124,25 +40153,25 @@ function (_Component) {
         className: "col-12 col-sm-12 col-lg-3 col-md-3 ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 168
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 169
         },
         __self: this
       }, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 181
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_14__["ButtonToolbar"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 182
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_pages_dayDetails__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -40151,7 +40180,7 @@ function (_Component) {
         day_details: this.state.dayDetails,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 183
         },
         __self: this
       }))));
@@ -40185,8 +40214,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _styles_calander_styles_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/calander_styles.css */ "./styles/calander_styles.css");
-/* harmony import */ var _styles_calander_styles_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_calander_styles_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
 
 

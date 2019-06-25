@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-import '../styles/calander_styles.css'
+import '../styles/styles.scss'
 
 import { Button, Modal } from 'react-bootstrap'
 

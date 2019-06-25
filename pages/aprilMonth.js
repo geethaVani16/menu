@@ -65,13 +65,27 @@ export default class Month extends Component {
                         <div className='day-tithi'>
                             {this.state.panchagam[d].tithi_name }
                        </div>
-                       <div 
+                       <span 
                          className='table-day'
                             onClick={() => this.setState({ modalShow:true, dayDetails:this.state.panchagam[d]})}
                        >{this.state.panchagam[d].day}
-                       </div>
-                       <div>
-                           {/* {this.state.panchagam[d].} */}
+                       </span>
+                       <div className= 'font-awasome-sun'>
+                                <div className='SunRise'>
+                                    <i class="fas fa-sun ">
+                                        {moment(this.state.panchagam[d].sun_Rise).format("HH:mm")}
+                                    </i>
+                                </div>
+
+                                <div className='Sunset'>
+
+                                <i class="fas fa-sun ">
+                                    {moment(this.state.panchagam[d].sun_Set).format("HH:mm")}
+                                </i>
+
+                                </div>
+                            
+
                        </div>
                       
                     </div> 
@@ -105,7 +119,9 @@ export default class Month extends Component {
         let modalClose = () => this.setState({ modalShow: false });
         // console.log(this.state.monthDays,'monthDays')
          console.log('state panchanga',this.state)
+         
         return (
+            
             <div>
                <div className='container-fluid'>
                 <div className='row'>
@@ -173,6 +189,7 @@ export default class Month extends Component {
                    
                </div>
             </div>
+           
         )
     }
 }
