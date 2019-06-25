@@ -7516,7 +7516,8 @@ body #__next {
 .font-awasome-sun {
   display: flex;
   font-size: 12px;
-  padding: 5px; }
+  padding: 5px;
+  width: 100%; }
 
 .Sunset {
   color: #8c2502;
@@ -7525,6 +7526,9 @@ body #__next {
 
 .SunRise {
   color: #ff9629; }
+
+.font-awasome-moon-star {
+  font-size: 12px; }
 
 /**************************media qurery for calander ************************************/
 @media only screen and (max-width: 500px) {

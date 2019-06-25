@@ -85,7 +85,12 @@ export default class Month extends Component {
 
                                 </div>
                             
+                       </div>
 
+                       <div className='font-awasome-moon-star'>
+
+                            <i class="far fa-star " >{this.state.panchagam[d].nakshatra_name} </i>
+                            <i class="far fa-moon" ></i>
                        </div>
                       
                     </div> 
