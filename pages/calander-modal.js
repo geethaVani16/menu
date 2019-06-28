@@ -1,16 +1,15 @@
 import React from 'react'
 import moment from 'moment'
 import axios from 'axios'
-import '../styles/calander_styles.css'
-import imageNext from '../images/next.svg'
-import imagePrev from '../images/prev.svg'
+import '../styles/styles.scss'
 import { ButtonToolbar, Button, Modal } from 'react-bootstrap'
 
 
 class DayCalander extends React.Component {
+  
 
   render() {
-   console.log(this.props,'props in day cal')
+  //  console.log(this.props,'props in day cal')
     return (
       <Modal
         {...this.props}
@@ -47,7 +46,9 @@ export default class MyCalander extends React.Component {
     headerMonth:{},
     panchagam:[],
     days: [],
-    dayDetails:''
+    dayDetails:'',
+    showMonthPopUp:false,
+    showYearPopUp:false
   }
 
   weekdaysShort = moment.weekdaysShort(); // ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -74,6 +75,78 @@ export default class MyCalander extends React.Component {
     let firstDay = moment(dateContext).startOf('month').format('d') // Day of week 0...1..5...6 //0--sun 1--mon
     return firstDay; //output:6 // month is starting with saturday
   }
+  onChangeMonth = (e,month) => {
+    console.log(e.target.value,'target')
+    console.log(month,'month')
+    this.setState(() => ({showMonthPopUp:!this.state.showMonthPopUp}))
+  }
+
+  MonthNav = () => {
+    return (
+      <span onClick={(e) => {this.onChangeMonth(e,this.month())}} >
+         {/* for displaying month inside the calander */}
+       {this.month()}
+        {this.state.showMonthPopUp && <this.MonthListDisplay data={this.months}/> }
+          
+      </span>
+    )
+  }
+
+  YearNav = () => {
+    return (
+      <span>{this.year()}</span>
+    )
+  }
+ 
+
+  selectChange = (e,data) => {
+    console.log(e,"selectChange")
+    console.log(data)
+    this.setMonth(data);
+
+  }
+
+  setMonth = (month) => {
+    // console.log('set month called ',month)
+    let monthNumber=this.months.indexOf(month)
+    // console.log(monthNumber,"monthNumber")
+    let dateContext=Object.assign({},this.state.dateContext)
+    dateContext=moment(dateContext).set('month',monthNumber)
+    // console.log(dateContext,'in setMonth')
+    this.setState(() => ({dateContext:dateContext}))
+    console.log(dateContext,'dateContext in setMonth')
+  }
+
+  
+  MonthListDisplay =(props) => {
+   let popup= props.data.map(data => {
+      return(
+        <div key ={data}>
+          {/* when onClick is fired we send data i.e (month) in props(data) */}
+         <a href='#' onClick={ (e) => {this.selectChange(e,data)}}> {data}</a> 
+        </div>
+      )
+    })
+    return (
+      <div >{popup}</div>
+    )
+    
+  }
+
+  prevMonth = () => {
+    let dateContext=Object.assign({},this.state.dateContext)
+    dateContext=moment(dateContext).subtract(1,'month');
+    this.setState(() => ({dateContext:dateContext}))
+  }
+    
+
+  nextMonth = () => {
+
+    let dateContext=Object.assign({},this.state.dateContext)
+    dateContext=moment(dateContext).add(1,'month');
+    this.setState(() => ({dateContext:dateContext}))
+  }
+
   
  
 
@@ -84,7 +157,7 @@ export default class MyCalander extends React.Component {
             this.setState(() =>({
                 headerMonth:response.data.header_data,
                 panchagam:response.data.panchagam
-            }), () =>this.GenCal() )
+            }) )
             
         })
         .catch(err => console.log(err))
@@ -92,7 +165,17 @@ export default class MyCalander extends React.Component {
         
   }
 
-  GenCal = () => {
+    
+
+
+    // this.setState(() => ({ days: rows }))
+    // console.log(this.state.days,"days in state in generate calander")
+  
+  
+
+  render() {
+
+
     let blanks = [];
     for (let i = 0; i < this.firstDayofMonth(); i++) {
       blanks.push(<td key={i * 100}>{''}</td>)
@@ -100,7 +183,7 @@ export default class MyCalander extends React.Component {
 
     var daysInMonth = [];
     
-    for (let d = 0; d <= this.daysInMonth()-1; d++) {
+    for (let d = 1; d <= this.daysInMonth(); d++) {
      
       daysInMonth.push(
         <td key={d}>
@@ -109,11 +192,10 @@ export default class MyCalander extends React.Component {
 
             <span 
             className='table-day'
-            onClick={ () => this.setState({ modalShow:true, dayDetails: d })}
+             onClick={ () => this.setState({ modalShow:true, dayDetails: d })}
             >
-              
-          {/* {console.log(this.state.panchagam[d],'v')} */}
-              {this.state.panchagam[d].day}
+              {/* {this.state.panchagam[d].day} */}
+              {d}
             </span>
           </div>
 
@@ -126,8 +208,8 @@ export default class MyCalander extends React.Component {
     let rows = [];
     let cells = [];
     totalSlots.forEach((row, i) => {
-      console.log(row,'row')
-      console.log(i,'i')
+      // console.log(row,'row')
+      // console.log(i,'i')
       if ((i % 7) !== 0) {
         cells.push(row) //row is one td item
       }
@@ -142,14 +224,20 @@ export default class MyCalander extends React.Component {
         rows.push(insertRow)
       }
       
-    })
-    this.setState(() => ({ days: rows }))
-  }
-  
+    });
 
-  render() {
+    let trElements=rows.map((d,i) => {
+      return (
+        <tr key={i}>
+          {d}
+        </tr>
+      )
+    })
+
+
+
     let modalClose = () => this.setState({ modalShow: false });
-    console.log(this.state.panchagam ,'state')
+    // console.log(this.state.panchagam ,'state')
     
 
     return (
@@ -168,21 +256,24 @@ export default class MyCalander extends React.Component {
                     <span className='calander-prev'
                       onClick={(e) => { this.prevMonth() }}
                     >
-                      <img src={imagePrev} className="image-prev-month" />
+                      <i className="fas fa-arrow-circle-left"></i>
+                      {/* <img src={imagePrev} className="image-prev-month" /> */}
                     </span>
                     <h1> {this.month()}-{this.year()} </h1>
                     <span className='calander-next'
-                      onClick={(e) => { this.nextMonth() }}
+                     
                     >
-                      <img src={imageNext} className="image-next-month" />
+                      {/* <img src={imageNext} className="image-next-month" /> */}
+
+                      <i className="fas fa-arrow-circle-right"  onClick={(e) => { this.nextMonth() }}></i>
                     </span>
                   </div>
 
                   <span>
 
-                    {/* <span> 
-                          <this.MonthNav/>
-                    </span> */}
+                    <span> 
+                          <this.MonthNav/> {""} <this.YearNav/>
+                    </span>
 
                     <table className='main-table-wrapper' >
 
@@ -197,9 +288,11 @@ export default class MyCalander extends React.Component {
                       </thead>
 
                       <tbody className='calander-body '>
-                        {this.state.days.map((day, i) => {
+                        {/* {this.state.days.map((day, i) => {
                           return <tr key={i} className='calander-tr'> {day} </tr>
-                        })}
+                        })} */}
+
+                        {trElements}
 
                       </tbody>
                     </table>

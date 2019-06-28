@@ -17,7 +17,7 @@ export default class DayCalander extends React.Component {
     let month = moment(this.props.day_details.date).format('MMMM')
     // console.log(month)
     let year = moment(this.props.day_details.date).format('YYYY')
-    console.log(year)
+    // console.log(year)
     return (
       // <div className='day-wrapper'>
 

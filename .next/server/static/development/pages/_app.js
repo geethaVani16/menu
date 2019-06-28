@@ -990,7 +990,7 @@ function (_App) {
           lineNumber: 20
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("head", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
@@ -1003,10 +1003,17 @@ function (_App) {
           lineNumber: 23
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD6thY8torbKUXm0TrqXC_2mQlkiBnOLQU&libraries=places",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 29
         },
         __self: this
       })));

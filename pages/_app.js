@@ -18,10 +18,12 @@ class MyApp extends App {
 
     return (
       <Container>
-          <head>
+          <Head>
 
           <script src="https://kit.fontawesome.com/6702496442.js" />
-          </head>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6thY8torbKUXm0TrqXC_2mQlkiBnOLQU&libraries=places"></script>
+
+          </Head>
         
 
         <Component {...pageProps} />

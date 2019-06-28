@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import '../styles/styles.scss'
 import axios from 'axios'
+import PlacesAutocomplete from "react-places-autocomplete"
+import { geocodeByAddress,geocodeByPlaceId,getLatLng,} from 'react-places-autocomplete';
+
 
 export default class Form extends Component {
     state = {

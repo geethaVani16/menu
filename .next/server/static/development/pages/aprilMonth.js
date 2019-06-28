@@ -88,32 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./images/next.svg":
-/*!*************************!*\
-  !*** ./images/next.svg ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4OCA0ODgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4OCA0ODg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDE2LjUsNzEuNUMzNzAuNCwyNS40LDMwOS4yLDAsMjQ0LDBTMTE3LjYsMjUuNCw3MS41LDcxLjVDMjUuNCwxMTcuNiwwLDE3OC44LDAsMjQ0czI1LjQsMTI2LjQsNzEuNSwxNzIuNQ0KCQkJQzExNy42LDQ2Mi42LDE3OC44LDQ4OCwyNDQsNDg4czEyNi40LTI1LjQsMTcyLjUtNzEuNUM0NjIuNiwzNzAuNCw0ODgsMzA5LjIsNDg4LDI0NFM0NjIuNiwxMTcuNiw0MTYuNSw3MS41eiBNMjQ0LDQ3Ng0KCQkJQzExNi4xLDQ3NiwxMiwzNzEuOSwxMiwyNDRTMTE2LjEsMTIsMjQ0LDEyczIzMiwxMDQuMSwyMzIsMjMyUzM3MS45LDQ3NiwyNDQsNDc2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjk1LjMsMjM5LjhMMjIwLDE2NC41Yy0yLjMtMi4zLTYuMS0yLjMtOC41LDBjLTIuMywyLjMtMi4zLDYuMSwwLDguNWw3MS4xLDcxLjFsLTcxLjEsNzEuMWMtMi4yLDIuMi0yLjIsNiwwLjEsOC40DQoJCQljMS4yLDEuMiwyLjcsMS44LDQuMiwxLjhzMy4xLTAuNiw0LjItMS44bDc1LjMtNzUuM0MyOTcuNiwyNDYsMjk3LjYsMjQyLjIsMjk1LjMsMjM5Ljh6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
-
-/***/ }),
-
-/***/ "./images/prev.svg":
-/*!*************************!*\
-  !*** ./images/prev.svg ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4OCA0ODgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4OCA0ODg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDE2LjUsNzEuNUMzNzAuNCwyNS40LDMwOS4yLDAsMjQ0LDBTMTE3LjYsMjUuNCw3MS41LDcxLjVDMjUuNCwxMTcuNiwwLDE3OC44LDAsMjQ0czI1LjQsMTI2LjQsNzEuNSwxNzIuNQ0KCQkJQzExNy42LDQ2Mi42LDE3OC44LDQ4OCwyNDQsNDg4czEyNi40LTI1LjQsMTcyLjUtNzEuNUM0NjIuNiwzNzAuNCw0ODgsMzA5LjIsNDg4LDI0NFM0NjIuNiwxMTcuNiw0MTYuNSw3MS41eiBNMjQ0LDQ3Ng0KCQkJQzExNi4xLDQ3NiwxMiwzNzEuOSwxMiwyNDRTMTE2LjEsMTIsMjQ0LDEyczIzMiwxMDQuMSwyMzIsMjMyUzM3MS45LDQ3NiwyNDQsNDc2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjA1LjMsMjQ0bDcxLjEtNzEuMWMyLjMtMi4zLDIuMy02LjEsMC04LjVjLTIuMy0yLjMtNi4xLTIuMy04LjUsMGwtNzUuMyw3NS4zYy0yLjMsMi4zLTIuMyw2LjEsMCw4LjVsNzUuMyw3NS4zDQoJCQljMS4yLDEuMiwyLjcsMS44LDQuMiwxLjhzMy4xLTAuNiw0LjItMS44YzIuMy0yLjMsMi4zLTYuMSwwLTguNUwyMDUuMywyNDR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
-
-/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
@@ -466,6 +444,198 @@ function _typeof(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/react-datepicker/dist/react-datepicker.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-datepicker/dist/react-datepicker.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./pages/Location_search.js":
+/*!**********************************!*\
+  !*** ./pages/Location_search.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-places-autocomplete */ "react-places-autocomplete");
+/* harmony import */ var react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+
+var _jsxFileName = "/home/geetha/practice/learning/menu/pages/Location_search.js";
+
+ // import '../styles/styles.scss'
+
+var selectPlace = {
+  color: "#212529",
+  position: "absolute",
+  zIndex: 10,
+  width: "90%",
+  opacity: 0.6,
+  fontSize: 15,
+  lineHeight: 2
+};
+
+var LocationSearchInput =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(LocationSearchInput, _React$Component);
+
+  function LocationSearchInput(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, LocationSearchInput);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(LocationSearchInput).call(this, props));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleChange", function (address) {
+      _this.setState({
+        address: address
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSelect", function (address) {
+      //   console.log(address)
+      _this.props.handleSelectCity(address);
+
+      Object(react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9__["geocodeByAddress"])(address).then(function (results) {
+        return Object(react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9__["getLatLng"])(results[0]);
+      }).then(function (latLng) {
+        // console.log('Success', latLng)
+        _this.setState({
+          latLng: latLng
+        }); // console.log(this.state.latLng,'statelatlong')
+
+
+        _this.props.handleSelectPlace(latLng, _this.state.address);
+      }).catch(function (error) {
+        return console.error('Error1', error);
+      });
+    });
+
+    _this.state = {
+      address: '',
+      latLng: []
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(LocationSearchInput, [{
+    key: "render",
+    value: function render() {
+      // console.log(this.props,'props in location')
+      // console.log(this.state.address,'address')
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_places_autocomplete__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        className: " date-picker upPad-width",
+        value: this.state.address,
+        onChange: this.handleChange,
+        onSelect: this.handleSelect // handleSelectPlaceChange={this.handleSelectPlaceChange}
+        ,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, function (_ref) {
+        var getInputProps = _ref.getInputProps,
+            suggestions = _ref.suggestions,
+            getSuggestionItemProps = _ref.getSuggestionItemProps,
+            loading = _ref.loading;
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 67
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, getInputProps({
+          placeholder: 'Search place name',
+          className: 'location-search-input form-control'
+        }), {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 68
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "autocomplete-dropdown-container",
+          style: selectPlace,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          },
+          __self: this
+        }, loading && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 77
+          },
+          __self: this
+        }, "Loading..."), suggestions.map(function (suggestion) {
+          var className = suggestion.active ? 'suggestion-item--active' : 'suggestion-item'; // inline style for demonstration purpose
+
+          var style = suggestion.active ? {
+            backgroundColor: '#fafafa',
+            cursor: 'pointer'
+          } : {
+            backgroundColor: '#ffffff',
+            cursor: 'pointer'
+          };
+          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, getSuggestionItemProps(suggestion, {
+            className: className,
+            style: style
+          }), {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 87
+            },
+            __self: this
+          }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 93
+            },
+            __self: this
+          }, suggestion.description));
+        })));
+      }));
+    }
+  }]);
+
+  return LocationSearchInput;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (LocationSearchInput);
+
+/***/ }),
+
 /***/ "./pages/aprilMonth.js":
 /*!*****************************!*\
   !*** ./pages/aprilMonth.js ***!
@@ -476,28 +646,34 @@ function _typeof(obj) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Month; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! moment */ "moment");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
-/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _pages_dayDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../pages/dayDetails */ "./pages/dayDetails.js");
-/* harmony import */ var _images_next_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../images/next.svg */ "./images/next.svg");
-/* harmony import */ var _images_next_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_next_svg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _images_prev_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../images/prev.svg */ "./images/prev.svg");
-/* harmony import */ var _images_prev_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_prev_svg__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-datepicker */ "react-datepicker");
+/* harmony import */ var react_datepicker__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_datepicker__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
+/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _pages_Location_search__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/Location_search */ "./pages/Location_search.js");
+/* harmony import */ var _pages_dayDetails__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../pages/dayDetails */ "./pages/dayDetails.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! querystring */ "querystring");
+/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(querystring__WEBPACK_IMPORTED_MODULE_17__);
+
 
 
 
@@ -515,180 +691,271 @@ var _jsxFileName = "/home/geetha/practice/learning/menu/pages/aprilMonth.js";
 
 
 
+
+
 var Month =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Month, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Month, _Component);
 
-  function Month() {
-    var _getPrototypeOf2;
-
+  function Month(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Month);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Month);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Month).call(this, props));
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Month)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSelectPlace", function (latLong) {
+      // console.log(place,'place')
+      _this.setState({
+        latLong: latLong
+      });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      modalShow: false,
-      dateContext: moment__WEBPACK_IMPORTED_MODULE_8___default()(),
-      panchagam: [],
-      monthDays: [],
-      dayDetails: {}
-    });
+      var latitude = _this.state.latLong["lat"];
+      var longitude = _this.state.latLong["lng"]; // console.log(latitude,longitude)
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "weekdaysShort", moment__WEBPACK_IMPORTED_MODULE_8___default.a.weekdaysShort());
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get("https://maps.googleapis.com/maps/api/timezone/json?location=".concat(latitude, ",").concat(longitude, "&timestamp=1561704054&key=AIzaSyD6thY8torbKUXm0TrqXC_2mQlkiBnOLQU&libraries=places")).then(function (response) {
+        // console.log(response.data)
+        _this.setState({
+          timeZoneName: response.data.timeZoneId
+        });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "year", function () {
-      return _this.state.dateContext.format('Y');
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "month", function () {
-      return _this.state.dateContext.format("MMMM");
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "prevMonth", function () {
-      react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Month, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
+        console.log(_this.state.timeZoneName, 'timezone');
+      }).catch(function (err) {
+        return console.log(err);
+      });
+      var formData = {
+        year: _this.year(),
+        month: moment__WEBPACK_IMPORTED_MODULE_9___default()(_this.state.startDate).format('MM'),
+        time: _this.state.dateContext.format('hh:mm:ss'),
+        timezonename: _this.state.timeZoneName,
+        timezone: "GMT+0530",
+        language: "Telugu",
+        city: _this.state.city
+      };
+      console.log(formData, 'formdata');
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.post('https://mytempletour.com/api/panchang', formData).then(function (response) {
+        console.log(response.data);
+      }).catch(function (err) {
+        return console.log(err);
       });
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "nextMonth", function () {
-      console.log('next');
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSelectCity", function (city) {
+      console.log(city, "in aprilmonth");
+
+      _this.setState({
+        city: city
+      });
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "firstDayofMonth", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleDateChange", function (date) {
+      _this.setState({
+        startDate: date,
+        dateContext: moment__WEBPACK_IMPORTED_MODULE_9___default()(date)
+      });
+
+      var formData = {
+        year: _this.year(),
+        month: moment__WEBPACK_IMPORTED_MODULE_9___default()(_this.month()).format('MM') // console.log(formData, 'formdata')
+
+      };
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "weekdaysShort", moment__WEBPACK_IMPORTED_MODULE_9___default.a.weekdaysShort());
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "year", function () {
+      return _this.state.dateContext.format('Y');
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "month", function () {
+      return _this.state.dateContext.format("MMMM");
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "prevMonth", function () {
+      var dateContext = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()({}, _this.state.dateContext);
+
+      dateContext = moment__WEBPACK_IMPORTED_MODULE_9___default()(dateContext).subtract(1, 'month');
+
+      _this.setState(function () {
+        return {
+          dateContext: dateContext
+        };
+      }); // this.GenerateMonthCalander()
+
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "nextMonth", function () {
+      var dateContext = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()({}, _this.state.dateContext);
+
+      dateContext = moment__WEBPACK_IMPORTED_MODULE_9___default()(dateContext).add(1, 'month');
+
+      _this.setState(function () {
+        return {
+          dateContext: dateContext
+        };
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "firstDayofMonth", function () {
       var dateContext = _this.state.dateContext;
-      var firstDay = moment__WEBPACK_IMPORTED_MODULE_8___default()(dateContext).startOf('month').format('d'); // Day of week 0...1..5...6 //0--sun 1--mon
+      var firstDay = moment__WEBPACK_IMPORTED_MODULE_9___default()(dateContext).startOf('month').format('d'); // Day of week 0...1..5...6 //0--sun 1--mon
 
       return firstDay; //output:6 // month is starting with saturday
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "daysInMonth", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "daysInMonth", function () {
       return _this.state.dateContext.daysInMonth();
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "GenerateMonthCalander", function () {
+    _this.state = {
+      modalShow: false,
+      dateContext: moment__WEBPACK_IMPORTED_MODULE_9___default()(),
+      panchagam: [],
+      monthDays: [],
+      dayDetails: {},
+      startDate: new Date(),
+      latLong: [],
+      selectLanguage: '',
+      timeZoneName: '',
+      city: ''
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Month, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://harivara.staging.wpengine.com/asto_data.php').then(function (response) {
+        _this2.setState(function () {
+          return {
+            panchagam: response.data.panchagam
+          };
+        });
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      // console.log(moment("Fri Jun 29 2019 16:47:58 GMT+0530 (India Standard Time)"))
+      // console.log(this.state.selectPlace,'state')
+      // console.log(this.props,'props in aprilMonth')
+      var modalClose = function modalClose() {
+        return _this3.setState({
+          modalShow: false
+        });
+      };
+
       var blanks = [];
 
-      for (var i = 0; i < _this.firstDayofMonth(); i++) {
-        blanks.push(react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
+      for (var i = 0; i < this.firstDayofMonth(); i++) {
+        blanks.push(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("td", {
           key: i * 100,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
+            lineNumber: 135
           },
           __self: this
         }, ''));
       }
 
-      var daysInMonth = [];
-      console.log(_this.daysInMonth());
+      var daysInMonth = []; // console.log(this.daysInMonth())
 
       var _loop = function _loop(d) {
-        daysInMonth.push(react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("td", {
-          key: _this.state.panchagam[d].day,
+        daysInMonth.push(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("td", {
+          // key={this.state.panchagam[d].day}
           className: "day-td-item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 141
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "table-td-item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 63
+            lineNumber: 145
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }, d, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "day-tithi",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 153
           },
           __self: this
-        }, _this.state.panchagam[d].tithi_name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
           className: "table-day",
           onClick: function onClick() {
-            return _this.setState({
+            return _this3.setState({
               modalShow: true,
-              dayDetails: _this.state.panchagam[d]
+              dayDetails: _this3.state.panchagam[d]
             });
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 156
           },
           __self: this
-        }, _this.state.panchagam[d].day), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "font-awasome-sun",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 73
+            lineNumber: 162
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "SunRise",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 163
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
-          class: "fas fa-sun ",
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+          className: "fas fa-sun ",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 75
+            lineNumber: 164
           },
           __self: this
-        }, moment__WEBPACK_IMPORTED_MODULE_8___default()(_this.state.panchagam[d].sun_Rise).format("HH:mm"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "Sunset",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 80
+            lineNumber: 169
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
-          class: "fas fa-sun ",
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+          className: "fas fa-sun ",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 171
           },
           __self: this
-        }, moment__WEBPACK_IMPORTED_MODULE_8___default()(_this.state.panchagam[d].sun_Set).format("HH:mm")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "font-awasome-moon-star",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 179
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
-          class: "far fa-star ",
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+          className: "far fa-moon",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
-          },
-          __self: this
-        }, _this.state.panchagam[d].nakshatra_name, " "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
-          class: "far fa-moon",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 93
+            lineNumber: 182
           },
           __self: this
         })))));
       };
 
-      for (var d = 0; d <= _this.daysInMonth() - 1; d++) {
+      for (var d = 1; d <= this.daysInMonth(); d++) {
         _loop(d);
       }
 
@@ -712,223 +979,343 @@ function (_Component) {
           rows.push(_insertRow);
         }
       });
-
-      _this.setState(function () {
-        return {
-          monthDays: rows
-        };
+      var trElements = rows.map(function (d, i) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("tr", {
+          key: i * 0.1,
+          className: "calander-tr",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 211
+          },
+          __self: this
+        }, d);
       });
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Month, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_9___default.a.get('https://harivara.staging.wpengine.com/asto_data.php').then(function (response) {
-        _this2.setState(function () {
-          return {
-            panchagam: response.data.panchagam
-          };
-        }, function () {
-          return _this2.GenerateMonthCalander();
-        });
-      }).catch(function (err) {
-        return console.log(err);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this3 = this;
-
-      var modalClose = function modalClose() {
-        return _this3.setState({
-          modalShow: false
-        });
-      }; // console.log(this.state.monthDays,'monthDays')
-
-
-      console.log('state panchanga', this.state);
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 219
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container-fluid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 220
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 221
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-sm-12 col-lg-9 col-md-9 ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 222
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "  calander-wrapper",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 223
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "calander-header-wrapper",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        className: "upPad-calander-header",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 227
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "row ",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 230
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "col-sm-4 col-lg-4 col-md-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 232
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "upPad-select",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 233
+        },
+        __self: this
+      }, "Select Place"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 234
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Location_search__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        handleSelectPlace: this.handleSelectPlace,
+        handleSelectCity: this.handleSelectCity,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 237
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "col-sm-4 col-lg-4 col-md-4 ",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 245
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "upPad-select",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 246
+        },
+        __self: this
+      }, "Select Date"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_datepicker__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        selected: this.state.startDate,
+        onChange: this.handleDateChange,
+        className: "form-control date-picker upPad-width",
+        popperPlacement: 'bottom',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 247
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "col-sm-4 col-lg-4 col-md-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 256
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "upPad-select",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 258
+        },
+        __self: this
+      }, "Select Language "), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 259
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("label", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 261
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("select", {
+        className: "form-control upPad-width",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 262
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 263
+        },
+        __self: this
+      }, "select Language"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "telugu",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 264
+        },
+        __self: this
+      }, "telugu"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "tamil",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 265
+        },
+        __self: this
+      }, "tamil"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "hindi",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 266
+        },
+        __self: this
+      }, "Hindi"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "kanada",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 267
+        },
+        __self: this
+      }, "kanada"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "marathi",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 268
+        },
+        __self: this
+      }, "Marathi"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "malayalam",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 269
+        },
+        __self: this
+      }, "malayalam"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+        value: "english",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 270
+        },
+        __self: this
+      }, "English"))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "calander-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 286
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "calander-prev",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 290
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        className: "fas fa-chevron-left fa-sm-font-awasome",
         onClick: function onClick(e) {
           _this3.prevMonth();
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 291
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        src: _images_prev_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
-        className: "image-prev-month",
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 293
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 142
-        },
-        __self: this
-      }, " ", this.month(), "-", this.year(), " "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+      }, " ", this.month(), "-", this.year(), " "), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "calander-next",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 294
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        className: "fas fa-chevron-right arrow-right fa-sm-font-awasome",
         onClick: function onClick(e) {
           _this3.nextMonth();
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143
+          lineNumber: 297
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        src: _images_next_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
-        className: "image-next-month",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 146
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      })))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "main-calander",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 305
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("table", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("table", {
         className: "main-table-wrapper",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 306
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("thead", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("thead", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 307
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("tr", {
         className: "table-thead-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 308
         },
         __self: this
       }, this.weekdaysShort.map(function (weekday) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("th", {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("th", {
           key: weekday,
           className: "th-item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 155
+            lineNumber: 310
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
           className: "weekday",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 156
+            lineNumber: 311
           },
           __self: this
         }, weekday));
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tbody", {
+      }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("tbody", {
         className: "calander-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 161
+          lineNumber: 316
         },
         __self: this
-      }, this.state.monthDays.map(function (day, i) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("tr", {
-          key: i * 0.1,
-          className: "calander-tr",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 164
-          },
-          __self: this
-        }, day);
-      })))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, trElements))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-12 col-sm-12 col-lg-3 col-md-3 ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 329
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 330
         },
         __self: this
-      }, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 342
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_14__["ButtonToolbar"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_16__["ButtonToolbar"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 343
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_pages_dayDetails__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_dayDetails__WEBPACK_IMPORTED_MODULE_15__["default"], {
         show: this.state.modalShow,
         onHide: modalClose,
         day_details: this.state.dayDetails,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188
+          lineNumber: 344
         },
         __self: this
       }))));
@@ -936,7 +1323,7 @@ function (_Component) {
   }]);
 
   return Month;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
 
 
 
@@ -998,8 +1385,8 @@ function (_React$Component) {
 
       var month = moment__WEBPACK_IMPORTED_MODULE_7___default()(this.props.day_details.date).format('MMMM'); // console.log(month)
 
-      var year = moment__WEBPACK_IMPORTED_MODULE_7___default()(this.props.day_details.date).format('YYYY');
-      console.log(year);
+      var year = moment__WEBPACK_IMPORTED_MODULE_7___default()(this.props.day_details.date).format('YYYY'); // console.log(year)
+
       return (// <div className='day-wrapper'>
         react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Modal"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
           size: "lg",
@@ -1417,7 +1804,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./pages/aprilMonth.js ***!
   \***********************************/
@@ -1528,6 +1915,17 @@ module.exports = require("moment");
 
 /***/ }),
 
+/***/ "querystring":
+/*!******************************!*\
+  !*** external "querystring" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("querystring");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1547,6 +1945,28 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-bootstrap");
+
+/***/ }),
+
+/***/ "react-datepicker":
+/*!***********************************!*\
+  !*** external "react-datepicker" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-datepicker");
+
+/***/ }),
+
+/***/ "react-places-autocomplete":
+/*!********************************************!*\
+  !*** external "react-places-autocomplete" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-places-autocomplete");
 
 /***/ })
 

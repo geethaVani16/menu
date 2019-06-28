@@ -2,10 +2,16 @@
 *{
     margin: 0%;
     padding: 0%;
-}
-body {
     font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;  
 }
+body #__next {
+    width: 100%;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif ;
+    font-size: 17px;
+    line-height: 1.66666667;
+    color: #000;
+}
+
 
 .panchanga_main {
     overflow-x: hidden;
@@ -53,6 +59,19 @@ body {
 }
 .sub-row {
     padding-top: 10px;
+}
+
+/*********************google location**********************/
+.select-place{
+    z-index: 10;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.8;
+    // position: absolute;
+    // position: "absolute";
+    // z-index: "10";
+    // opacity: 0.5;
+
 }
 /**************************************form css****************************/
 
@@ -154,13 +173,7 @@ body {
 }
 
 
-body #__next {
-    width: 100%;
-    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif ;
-    font-size: 17px;
-    line-height: 1.66666667;
-    color: #000;
-}
+
 .calander-wrapper {
     width: 100%;
     border: 7px solid #f5f5f5;
@@ -175,6 +188,23 @@ body #__next {
     width:100%;
     margin: 0  
 }
+
+.upPad-calander-header {
+    background-color: #f5f5f5;;
+    width: 100%;
+    height:auto;
+    padding: 30px;
+}
+.upPad-select {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 9px;
+}
+.upPad-width {
+    width: 100%;
+}
+
+
 .main-calander {
     width: auto;
 }
@@ -276,6 +306,11 @@ body #__next {
 .font-awasome-moon-star {
     font-size: 12px;
 }
+
+.fa-sm-font-awasome {
+    font-size: 1.875em;
+}
+
 
 
 /**************************media qurery for calander ************************************/
